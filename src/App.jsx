@@ -29,14 +29,14 @@ const App = () => {
   if (loading) {
     return (
       <main>
-        <h2>Loading</h2>
+        <h2>Loading</h2> {/* conditional rendering was added at the beginning */}
       </main>
     );
   }
   if (error) {
     return (
       <main>
-        <h2>Error: {error}</h2>
+        <h2>Error: {error}</h2> {/* conditional rendering was added at the beginning */}
       </main>
     );
   }
