@@ -3,6 +3,7 @@ import TourCard from './TourCard';
 
 const Gallery = ({ tours, setTours }) => {
 
+{/* function to remove a tour from the list by ID */}
   const removeTour = (id) => {
     const newTours = tours.filter((tour) => tour.id !== id);
     setTours(newTours);
@@ -10,6 +11,7 @@ const Gallery = ({ tours, setTours }) => {
 
   return (
     <section className="gallery">
+    {/* map through tours array and render a TourCard for each */}
       {tours.map((tour) => (
         <TourCard
           key={tour.id}
