@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Gallery from './components/Gallery';
 
 const App = () => {
   const [tours, setTours] = useState([]);
@@ -42,6 +43,7 @@ const App = () => {
   return (
     <main>
       <h1>Tours</h1>
+      <Gallery tours={tours} setTours={setTours} />
     </main>
   );
 };
